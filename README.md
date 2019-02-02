@@ -1,6 +1,8 @@
 # Overview
 
-JSON API for Todo List Node application built on Express and MongoDB.
+1. JSON API for Todo List Node application built on Express and MongoDB.
+
+2. Todo List application built with Javascript, HTML, CSS
 
 ## Install MongoDB on C9.io in root directory
 
