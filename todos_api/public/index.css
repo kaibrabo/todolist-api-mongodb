@@ -1,0 +1,115 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Headers */
+
+h1 {
+    font-weight: 400;
+    /*text-transform: uppercase;*/
+}
+
+.header-list {
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+
+/* Input */
+.form {
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: 3px solid black;
+}
+
+.form .todoInput {
+    width: 90%;
+    border: none;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.form .todoInput::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    opacity: 0.8;
+}
+
+input[type='text'] {
+    font-size: 120%;
+}
+
+.form .todoInput:focus {
+    outline: none;
+}
+
+/* List */
+
+.list {
+    /*border: 1px solid black;*/
+    width: 300px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.list-item {
+    width: 100%;
+    padding: 5px 15px;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.list-item:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.done{
+    color: #aaa;
+    text-decoration: line-through; 
+}
+
+.deleteTodo {
+    display: none;
+    text-align: right;
+    white-space: nowrap;
+    color: red;
+    padding: 0 10px 5px 10px;
+}
+
+.loadingDelete {
+    display: none;
+    text-align: right;
+    white-space: nowrap;
+    padding: 0 10px 5px 10px;
+}
+
+.list-item:hover .deleteTodo {
+    display: block;
+}
+
+.list-item:hover .deleteTodo:hover {
+    background-color: #aaa;
+    border-radius: 2px;
+}
+
+.list-item-completed {
+    display: none;
+    color: green;
+    text-decoration: none;
+}
